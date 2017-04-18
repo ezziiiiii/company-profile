@@ -1,0 +1,159 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    //----------HEADER----------//
+    #header-info {
+        .sosmed {
+            .nav {
+                float: left !important;
+            }
+        }
+        z-index: 5;
+        height: 100px;
+        width: 100%;
+    }
+
+    //----------MENU----------//
+    #menu {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+    }
+    .menu {
+        .heading-menu {
+            button {
+                color: #3A3C3E;
+                background: none;
+                margin: 20px 0px;
+                transition: all .5s ease-out;
+                -moz-transition: all .5s ease-out;
+                -webkit-transition: all .5s ease-out;
+                -o-transition: all .5s ease-out;
+            }
+            button:hover {
+                background-color: #F15F43;
+                color: #fff;
+            }
+        }
+    }
+
+    //----------SIDE-MENU----------//
+    .side-menu {
+        ul {
+            width: 100%;
+        }
+        li {
+            padding-left: 10px;
+        }
+        a {
+            color: #fff;
+        }
+        .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+            background-color: #F15F43;
+        }
+        .nav > li > a:focus, .nav > li > a:hover {
+            background-color: #F15F43;
+            transition: background-color .5s ease-out;
+            -moz-transition: background-color .5s ease-out;
+            -webkit-transition: background-color .5s ease-out;
+            -o-transition: background-color .5s ease-out;
+        }
+        position: absolute;
+        z-index: 5;
+        width: 250px;
+        background-color: #3A3C3E;
+        padding-right: 0px;
+        border-radius: 3px;
+        padding: 10px 0px;
+        height: 1024px;
+    }
+
+    //----------SLIDE-IMG----------//
+    .slide-img {
+        .carousel-caption {
+            .carousel-caption1 {
+                font-size: 38px !important;
+            }
+            .carousel-caption2 {
+                font-size: 16px !important;
+            }
+            .carousel-view {
+                font-size: 16px !important;
+            }
+            top: 25% !important;
+        }
+    }
+
+    //----------SERVICE----------//
+    .service {
+        i {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        #food {
+            border-right: 2px solid #eaeaea;
+        }
+        #ecommerce {
+            border-bottom: 2px solid #eaeaea;
+        }
+    }
+
+    //----------REVIEW----------//
+    .review {
+        .data-review {
+            .title-data-review {
+                h4 {
+                    font-size: 18px;
+                }
+                h2 {
+                    font-size: 34px;
+                }
+            }
+            .riset-data-review {
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
+        .data-review::before {
+            content: "";
+            background: #3A3C3E;
+            width: 680px;
+            height: 475px;
+            left: 45px;
+            top: 1580px;
+            position: absolute;
+        }
+    }
+
+    //----------OUR-TEAM----------//
+    .our-team {
+        .title-our-team {
+            h2 {
+                font-size: 34px;
+            }
+        }
+    }
+
+    //----------REQUEST----------//
+    .request {
+        .wrapper-request {
+            .title-request {
+                h2 {
+                    font-size: 34px;
+                }
+            }
+            .form-request {
+                input[type=text] {
+                    margin-bottom: 10px;
+                }
+            }
+            height: 235px;
+        }
+        .wrapper-request::before {
+            left: 335px;
+        }
+        height: 285px;
+    }
+}

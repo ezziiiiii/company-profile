@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Company Profile</title>
+
+    <!-- CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- js bxlider -->
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onresize="refresh()">
+
+    <header class="header" id="header-info">
+      <div class="info-heading container">
+        <div class="address col-md-4 col-sm-6">
+          <h5><i class="fa fa-map-marker"></i> Jl.Irida Timur 20, Bekasi</h5>
+        </div><!--END OF .ADDRESS-->
+        <div class="office-hours col-md-4 col-sm-6">
+          <h5><i class="fa fa-clock-o"></i> Mon - Fri: 09.00-17.00. Weekend CLOSED</h5>
+        </div><!--END OF .OFFICE-HOURS-->
+        <div class="contact col-md-2 col-sm-6">
+          <h5><i class="fa fa-phone"></i> 0987654321</h5>
+        </div><!--END OF .CONTACT-->
+        <div class="sosmed col-md-2 col-sm-6">
+          <ul class="nav nav-pills">
+            <li role="presentation"><button class="btn fa fa-facebook"></button></li>
+            <li role="presentation"><button class="btn fa fa-twitter"></button></li>
+            <li role="presentation"><button class="btn fa fa-google-plus"></button></li>
+          </ul>
+        </div><!--END OF .SOSMED-->
+      </div><!--END OF .INFO-HEADING-->
+    </header><!--END OF HEADER-->
+
+    <menu id="menu">
+      <div class="menu container">
+        <div class="heading-menu col-md-4">
+          <button class="btn fa fa-bars fa-2x show-menu visible-sm visible-xs pull-left"></button>
+          <a href="#" class="heading-brand">
+            <img src="images/logo.png">
+          </a>
+          <button class="btn fa fa-info-circle fa-2x show-header visible-sm visible-xs pull-right"></button>
+        </div><!--END OF .HEADING-MENU-->
+        <div class="list-menu col-md-8 hidden-sm hidden-xs" id="list-menu">
+          <ul class="nav nav-pills pull-right list">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Service</a></li>
+            <li><a href="#">Our Clients</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div><!--END OF .LIST-MENU-->
+      </div><!--END OF .MENU-->
+    </menu><!--END OF MENU-->
+   
+   
+    <div class="row visible-sm visible-xs">
+      <div class="side-menu container" id="side-menu">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Service</a></li>
+            <li><a href="#">Our Clients</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="slide-img">
+      <div class="wrapper-bg">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner img-list" role="listbox">
+            <div class="item active">
+              <img src="images/bg-slide1.jpg">
+              <div class="carousel-caption">
+                 <h1 class="carousel-caption1">
+                   UPGRADE <span class="text-thin">YOUR WEBSITE</span>
+                 </h1>
+                 <h5 class="carousel-caption2">We can provide the best choice for your company's website</h5>
+                 <a href="#" class="carousel-view">View Portofolio</a>
+              </div><!--END OF .CAROUSEL-CAPTION-->
+            </div>
+
+            <div class="item">
+              <img src="images/bg-slide2.jpg">
+              <div class="carousel-caption">
+                 <h1 class="carousel-caption1">
+                   UPGRADE <span class="text-thin">YOUR WEBSITE</span>
+                 </h1>
+                 <h5 class="carousel-caption2">We can provide the best choice for your company's website</h5>
+                 <a href="#" class="carousel-view">View Portofolio</a>
+              </div><!--END OF .CAROUSEL-CAPTION-->
+            </div>
+
+            <div class="item">
+              <img src="images/bg-slide3.jpg">
+              <div class="carousel-caption">
+                 <h1 class="carousel-caption1">
+                   UPGRADE <span class="text-thin">YOUR WEBSITE</span>
+                 </h1>
+                 <h5 class="carousel-caption2">We can provide the best choice for your company's website</h5>
+                 <a href="#" class="carousel-view">View Portofolio</a>
+              </div><!--END OF .CAROUSEL-CAPTION-->
+            </div>
+
+            <div class="item">
+              <img src="images/bg-slide4.jpg">
+              <div class="carousel-caption">
+                 <h1 class="carousel-caption1">
+                   UPGRADE <span class="text-thin">YOUR WEBSITE</span>
+                 </h1>
+                 <h5 class="carousel-caption2">We can provide the best choice for your company's website</h5>
+                 <a href="#" class="carousel-view">View Portofolio</a>
+              </div><!--END OF .CAROUSEL-CAPTION-->
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!--END OF #MYCAROUSEL-->
+      </div><!--END OF .WRAPPER-BG-->
+    </div><!--END OF .SLIDE-IMG-->
+
+
+    <div class="service">
+        <div class="col-md-4 col-sm-6 content-service-top text-center">
+          <div class="bisnis">
+            <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+            <h2><a href="#">Business & Service</a></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 content-service-top text-center">
+          <div class="real-estate">
+            <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+            <h2><a href="#">Real Estate</a></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 content-service-top text-center" id="food">
+          <div class="food">
+            <i class="fa fa-cutlery fa-3x" aria-hidden="true"></i>
+            <h2><a href="#">Food & Restaurant</a></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 content-service-bot text-center" id="ecommerce">
+          <div class="ecommerce">
+            <i class="fa fa-shopping-bag fa-3x" aria-hidden="true"></i>
+            <h2><a href="#">E-Commerce</a></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 content-service-bot text-center" id="education">
+          <div class="education">
+            <i class="fa fa-book fa-3x" aria-hidden="true"></i>
+            <h2><a href="#">Education</a></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 content-service-bot text-center" id="design">
+          <div class="design">
+            <i class="fa fa-leaf fa-3x" aria-hidden="true"></i>
+            <h2><a href="#">Design and Photography</a></h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!--END OF .SERVICE-->
+
+    <div class="review">
+      <div class="container data-review text-center">
+        <div class="title-data-review col-md-12">
+          <h4>LOOKING FOR</h4>
+          <h2>REVIEW <span class="text-thin">FOR OUR COMPANY</span></h2>
+          <p>With a lot of experience in web developer, we can provide solutions in website creation your company profile! </p>
+        </div><!-- END OF .TITLE-DATA-REVIEW-->
+        <div class="riset-data-review">
+          <div class="col-md-3 col-sm-3 trusted">
+            <h1>850</h1>
+            <h5>TRUSTED CLIENT</h5>
+          </div>
+          <div class="col-md-3 col-sm-3 award">
+            <h1>20</h1>
+            <h5>AWARDS</h5>
+          </div>
+          <div class="col-md-3 col-sm-3 experience">
+            <h1>10</h1>
+            <h5>YEARS OF EXPERIENCE</h5>
+          </div>
+          <div class="col-md-3 col-sm-3 expert">
+            <h1>30</h1>
+            <h5>EXPERT</h5>
+          </div>
+          <div class="clearfix"></div>
+        </div><!-- END OF .RISET-DATA-REVIEW-->
+      </div><!-- END OF .DATA-REVIEW-->
+    </div><!--END OF .REVIEW-->
+
+    <div class="our-team">
+      <div class="title-our-team text-center">
+        <h2>OUR <span class="text-thin">TEAM</span></h2>
+      </div><!-- END OF .TITLE-OUR-TEAM -->
+      <div class="content-slider">
+        <div class="slider-controller-left bx-controls-direction col-md-1 col-sm-1">
+          <a class="bx-prev prev-list" href=""></a>
+        </div>
+        <div class="wrapper-content-slider col-md-10 col-sm-10">
+          <div class="content-slider-list container">
+            <div class="team-list text-center">
+              <div class="pic-profil">
+                <img src="images/team-1.png">
+              </div>
+              <div class="user-name">
+                <h4>Jhon Wick</h4>
+                <p>Leader Developer</p>
+              </div>
+              <div class="personal-info">
+                <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> 0811223344</p>
+                <p class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> jhon@gmail.com</p>
+              </div>
+            </div><!--END OF .TEAM-LIST-->
+            <div class="team-list text-center">
+              <div class="pic-profil">
+                <img src="images/team-1.png">
+              </div>
+              <div class="user-name">
+                <h4>Jhon Wick</h4>
+                <p>Leader Developer</p>
+              </div>
+              <div class="personal-info">
+                <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> 0811223344</p>
+                <p class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> jhon@gmail.com</p>
+              </div>
+            </div><!--END OF .TEAM-LIST-->
+            <div class="team-list text-center">
+              <div class="pic-profil">
+                <img src="images/team-1.png">
+              </div>
+              <div class="user-name">
+                <h4>Jhon Wick</h4>
+                <p>Leader Developer</p>
+              </div>
+              <div class="personal-info">
+                <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> 0811223344</p>
+                <p class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> jhon@gmail.com</p>
+              </div>
+            </div><!--END OF .TEAM-LIST-->
+            <div class="team-list text-center">
+              <div class="pic-profil">
+                <img src="images/team-1.png">
+              </div>
+              <div class="user-name">
+                <h4>Jhon Wick</h4>
+                <p>Leader Developer</p>
+              </div>
+              <div class="personal-info">
+                <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> 0811223344</p>
+                <p class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> jhon@gmail.com</p>
+              </div>
+            </div><!--END OF .TEAM-LIST-->
+            <div class="team-list text-center">
+              <div class="pic-profil">
+                <img src="images/team-1.png">
+              </div>
+              <div class="user-name">
+                <h4>Jhon Wick</h4>
+                <p>Leader Developer</p>
+              </div>
+              <div class="personal-info">
+                <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> 0811223344</p>
+                <p class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i> jhon@gmail.com</p>
+              </div>
+            </div><!--END OF .TEAM-LIST-->
+          </div>
+        </div>
+        <div class="slider-controller-right col-md-1 col-sm-1 bx-controls-direction">
+          <span class="bx-next next-list" href=""></span>
+        </div>
+        <div class="clearfix"></div>
+      </div><!-- END OF .CONTENT-SLIDER -->
+    </div><!-- END OF .OUR-TEAM -->
+
+    <div class="request">
+      <div class="container wrapper-request">
+        <div class="title-request text-center">
+          <h2>REQUEST <span class="text-thin">FOR A MEETING</span></h2>
+        </div><!-- END OF .TITLE-REQUEST -->
+        <div class="form-request">
+          <div class="col-md-3 col-sm-6">
+            <input type="text" class="name form-control" placeholder="Name...">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <input type="text" class="phone form-control" placeholder="Phone Number...">
+          </div>
+          <div class="col-md-3 col-sm-6">
+             <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">I Would Like to Discuss
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div> 
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <button class="btn submit">SUBMIT</button>
+          </div>
+          <div class="clearfix"></div>
+        </div><!-- END OF .FORM-REQUEST -->
+      </div><!-- END OF .WRAPPER-REQUEST -->
+    </div><!-- END OF .REQUEST -->
+
+    <div class="latest-post">
+      <div class="wrapper-latest-post container">
+        <div class="title-latest-post text-center">
+          <h2>LATEST <span class="text-thin">POST</span></h2>
+        </div><!-- END OF .TITLE-LATEST-POST -->
+        <div class="content-latest-post">
+          <div class="list-post col-md-4 col-sm-4">
+            <div class="wrapper-list-post">
+              <div class="pic-post">
+                <img src="images/post-1.jpeg">
+              </div><!-- END OF .PIC-POST -->
+              <div class="text-post">
+                <h4>Lorem Ipsum is Simply Dummy Text of The Printing</h4>
+                <div class="info-post">
+                  <div class="col-md-6 col-sm-6 date">
+                    <p class="fa fa-calendar pull-left"> 10 MARET 2017</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 user">
+                    <p class="fa fa-user-o pull-right"> <span>JHON WICK</span></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div><!-- END OF .TEXT-POST -->
+            </div><!-- END OF .WRAPPER-LIST-POST -->
+          </div><!-- END OF .LIST-POST -->
+          <div class="list-post col-md-4 col-sm-4">
+            <div class="wrapper-list-post">
+              <div class="pic-post">
+                <img src="images/post-2.jpeg">
+              </div><!-- END OF .PIC-POST -->
+              <div class="text-post">
+                <h4>Lorem Ipsum is Simply Dummy Text of The Printing</h4>
+                <div class="info-post">
+                  <div class="col-md-6 col-sm-6 date">
+                    <p class="fa fa-calendar pull-left"> 12 MARET 2017</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 user">
+                    <p class="fa fa-user-o pull-right"> <span>JHON WICK</span></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div><!-- END OF .TEXT-POST -->
+            </div><!-- END OF .WRAPPER-LIST-POST -->
+          </div><!-- END OF .LIST-POST -->
+          <div class="list-post col-md-4 col-sm-4">
+            <div class="wrapper-list-post">
+              <div class="pic-post">
+                <img src="images/post-3.jpeg">
+              </div><!-- END OF .PIC-POST -->
+              <div class="text-post">
+                <h4>Lorem Ipsum is Simply Dummy Text of The Printing</h4>
+                <div class="info-post">
+                  <div class="col-md-6 col-sm-6 date">
+                    <p class="fa fa-calendar pull-left"> 14 MARET 2017</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 user">
+                    <p class="fa fa-user-o pull-right"> <span>JHON WICK</span></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div><!-- END OF .TEXT-POST -->
+            </div>
+          </div><!-- END OF .LIST-POST -->
+          <div class="clearfix"></div>
+        </div><!-- END OF .CONTENT-LATEST-POST -->
+        <div class="show-more text-center">
+          <a href="#"  class="btn btn-lg">Show More</a>
+        </div><!-- END OF .SHOW-MORE -->
+      </div><!-- END OF .WRAPPER-LATEST-POST -->
+    </div><!-- END OF .LATEST-POST -->
+
+    <div class="footer">
+      <div class="container content-footer">
+        <div class="col-md-3 col-sm-3 about">
+          <img src="images/logo.png">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div><!-- END OF .ABOUT -->
+        <div class="col-md-3 col-sm-3 menu-footer">
+          <ul class="menu-list">
+            <li class="title"><p>QUIK MENU</p></li>
+            <li class="list"><a href="#">Home</a></li>
+            <li class="list"><a href="#">About Us</a></li>
+            <li class="list"><a href="#">Careers</a></li>
+            <li class="list"><a href="#">Blog</a></li>
+            <li class="list"><a href="#">Our Services</a></li>
+            <li class="list"><a href="#">Contact Us</a></li>
+          </ul>
+        </div><!-- END OF .MENU-FOOTER -->
+        <div class="col-md-3 col-sm-3 contact">
+          <ul class="contact-list">
+            <li class="title"><p>CONTACT US</p></li>
+            <li class="list">
+              <i class="fa fa-phone"></i> <a href="#">0987456321</a>
+            </li>
+            <li class="list">
+              <i class="fa fa-envelope-o"></i> <a href="#">idgs@idgs.com</a>
+            </li>
+            <li class="list">
+              <i class="fa fa-map-marker"></i> <a href="#">Rukan Duren Tiga No.7k, Jl.Duren Tiga Raya No.7, Jakarta Selatan.</a>
+            </li>
+          </ul>
+        </div><!-- END OF .CONTACT -->
+        <div class="col-md-3 col-sm-3 news-letter">
+          <div class="wrapper-border">
+            <div class="heading-title">
+              <p>NEWS LETTER</p>
+            </div>
+            <div class="form">
+              <input type="text" class="form-control" placeholder="Write an email...">
+              <button class="btn">Submit</button>
+            </div>
+          </div><!-- END OF .WRAPPER-BORDER -->
+          <div class="follow">
+            <table>
+              <tr>
+                <td class="text"><p>Follow Us:</p></td>
+                <td>
+                  <button class="btn fb"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                </td>
+                <td>
+                  <button class="btn fb"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                </td>
+                <td>
+                  <button class="btn fb"><i class="fa fa-google-plus" aria-hidden="true"></i></button>
+                </td>
+                <td>
+                  <button class="btn fb"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+            </table>
+          </div><!-- END OF .FOLLOW -->
+        </div><!-- END OF .NEWS-LETTER -->
+      </div><!-- END OF .CONTENT-FOOTER -->
+    </div><!-- END OF .FOOTER -->
+    <div class="footer-bot">
+      <div class="container">
+        <p>&copy; by Aldi Rizki | 2017.</p>
+      </div>
+    </div>
+
+   
+    <script type="text/javascript">
+
+       // Belum detect view secara realtime
+      var viewportWidth = $(window).width();
+      var viewportHeight = $(window).height();
+      console.log(viewportWidth + ' ' + viewportHeight );
+      
+      function jqUpdateSize(){
+            // Get the dimensions of the viewport
+            var viewportWidth = $(window).width();
+            var viewportHeight = $(window).height();
+            console.log(viewportWidth + ' ' + viewportHeight );
+        };
+         $(document).ready(jqUpdateSize);    // When the page first loads
+         $(window).resize(jqUpdateSize);     // When the browser changes size
+      
+      // script untuk scroll
+      $(document).ready(function() {
+        // Menentukan elemen yang dijadikan sticky yaitu #menu
+        var stickyNavTop = $('#menu').offset().top; 
+        var stickyNav = function(){
+          var scrollTop = $(window).scrollTop();  
+          // Kondisi jika discroll maka #menu ditambahkan class sticky dan sebaliknya		
+          if (scrollTop > stickyNavTop) { 
+            $('#menu').css({ 'position': 'fixed', 'top': 0 });
+          } else {
+            $('#menu').css({ 'position': 'relative' });
+          }
+        };
+        // Jalankan fungsi stickyNav
+        stickyNav();
+        $(window).scroll(function() {
+          stickyNav();
+        });
+      });
+
+      // script untuk toggle .show-header
+      $(document).ready(function() {
+        if (viewportWidth <= 768) {
+          console.log("setelah if:"+ viewportWidth + ' ' + viewportHeight);
+          $('#header-info').css({'display':'none'});
+          $('.show-header').click(function() {
+            $('#header-info').animate({height: 'toggle'});
+            $('#header-info').css({ 'position': 'fixed', 'top': 80 });
+          });
+        }
+      });
+
+      // script untuk toggle .show-menu
+      $(document).ready(function() {
+        if (viewportWidth <= 768) {
+          console.log("setelah if:"+ viewportWidth + ' ' + viewportHeight);
+          $('#side-menu').css({'display':'none'});
+          $('.show-menu').click(function() {
+            $('#side-menu').animate({width: 'toggle'});
+            $('#side-menu').css({'position': 'fixed', 'top': 80 });
+          });
+        }
+      });
+
+      // script untuk slide .content-slider-list
+      $(document).ready(function() {
+        $('.content-slider-list').bxSlider({
+          slideWidth: 350,
+          minSlides: 2,
+          maxSlides: 3,
+          moveSlides: 1,
+          slideMargin: 10,
+          nextSelector: '.bx-next',
+          prevSelector: '.bx-prev',
+          prevText: '<i class="fa fa-arrow-left fa-2x border-custom" aria-hidden="true"></i>',
+          nextText: '<i class="fa fa-arrow-right fa-2x border-custom" aria-hidden="true"></i>'
+        })
+      });
+      
+    </script>
+  </body>
+</html>
